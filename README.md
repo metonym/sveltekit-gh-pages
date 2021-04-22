@@ -1,6 +1,6 @@
 # sveltekit-gh-pages
 
-> Minimal [SvelteKit](https://kit.svelte.dev/) set-up made deployable to GitHub Pages.
+> Minimal [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
 
 This project was scaffolded using the [`npm init svelte@next`](https://kit.svelte.dev/docs#introduction-getting-started) command using the skeleton template.
 
