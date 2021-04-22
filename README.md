@@ -8,7 +8,7 @@ This project was scaffolded using the [`npm init svelte@next`](https://kit.svelt
 
 ### 1) Use the static adapter
 
-Replace the default node adapted with the static adapter to prerender the app.
+Replace the default [node adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-node) with the [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
 
 **package.json**
 
@@ -42,7 +42,7 @@ module.exports = {
 
 ### 2) Modify `appDir` and `paths.base` in the config
 
-- `kit.appDir` should begin with an underscore because GitHub Pages [ignores folders beginning with "\_"](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)
+- `kit.appDir` should not begin with an underscore because GitHub Pages [ignores folders beginning with "\_"](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)
 - `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
 
 ```diff
