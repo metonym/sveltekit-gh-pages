@@ -14,7 +14,6 @@ Replace the default [node adapter](https://github.com/sveltejs/kit/tree/master/p
 
 ```diff
   "devDependencies": {
--   "@sveltejs/adapter-node": "next",
 +   "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "svelte": "^3.37.0",
@@ -25,15 +24,12 @@ Replace the default [node adapter](https://github.com/sveltejs/kit/tree/master/p
 **svelte.config.js**
 
 ```diff
-- const node = require("@sveltejs/adapter-node");
-+ const static = require("@sveltejs/adapter-static");
-const pkg = require("./package.json");
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+export default {
   kit: {
--   adapter: node(),
-+   adapter: static(),
++   adapter: adapter(),
     target: "#svelte",
   },
 };
@@ -46,14 +42,20 @@ module.exports = {
 - `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
 
 ```diff
-module.exports = {
+import adapter from "@sveltejs/adapter-static";
+
+/** @type {import('@sveltejs/kit').Config} */
+export default {
   kit: {
-    adapter: static(),
+    adapter: adapter(),
     target: "#svelte",
 +   appDir: "app",
-+   paths: { base: `/<repo-name>/` },
-  },
++   paths: {
++     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages/" : "",
++   },
++ },
 };
+
 ```
 
 ---
