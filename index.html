@@ -7,14 +7,14 @@
 
 		
 
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/start-c628fcf5.js">
+		<link rel="modulepreload" href="/sveltekit-gh-pages/app/start-40b43019.js">
 		<link rel="modulepreload" href="/sveltekit-gh-pages/app/chunks/vendor-43cd886a.js">
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/$layout.svelte-210ff03b.js">
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/index.svelte-f7e33f53.js">
+		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/__layout.svelte-ee4dc1ec.js">
+		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/index.svelte-805ac054.js">
 		<link rel="stylesheet" href="/sveltekit-gh-pages/app/assets/start-a8cd1609.css">
 
 		<script type="module">
-			import { start } from "/sveltekit-gh-pages/app/start-c628fcf5.js";
+			import { start } from "/sveltekit-gh-pages/app/start-40b43019.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/sveltekit-gh-pages/","assets":"/sveltekit-gh-pages"},
@@ -22,12 +22,13 @@
 				host: location.host,
 				route: true,
 				spa: false,
+				trailing_slash: "never",
 				hydrate: {
 					status: 200,
 					error: null,
 					nodes: [
-						import("/sveltekit-gh-pages/app/pages/$layout.svelte-210ff03b.js"),
-						import("/sveltekit-gh-pages/app/pages/index.svelte-f7e33f53.js")
+						import("/sveltekit-gh-pages/app/pages/__layout.svelte-ee4dc1ec.js"),
+						import("/sveltekit-gh-pages/app/pages/index.svelte-805ac054.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -43,10 +44,10 @@
     <div id="svelte">
 
 
-<h1>Welcome to SvelteKit</h1>
+<h1>sveltekit-gh-pages</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
-<a href="about">About</a>
+<a href="/about">About</a>
 
 
 
