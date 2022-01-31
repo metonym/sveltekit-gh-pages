@@ -8,7 +8,7 @@ This project was scaffolded using the [`npm init svelte@next`](https://kit.svelt
 
 ### 1) Use the static adapter
 
-Replace the default [node adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-node) with the [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
+Use the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
 
 **package.json**
 
@@ -36,26 +36,42 @@ export default {
 
 ```
 
-### 2) Modify `appDir` and `paths.base` in the config
+### 2) Modify `paths.base` in the config
 
-- `kit.appDir` should not begin with an underscore because GitHub Pages [ignores folders beginning with "\_"](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)
 - `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
 
 ```diff
 import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
-export default {
+const config = {
   kit: {
     adapter: adapter(),
     target: "#svelte",
-+   appDir: "app",
 +   paths: {
-+     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages/" : "",
++     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
 +   },
 + },
 };
 
+export default config;
+
+```
+
+### Add a `.nojekyll` file to the build
+
+The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
+
+```json
+// package.json
+{
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "start": "svelte-kit start",
+    "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
+  }
+}
 ```
 
 ---
