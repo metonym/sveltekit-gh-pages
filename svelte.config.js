@@ -1,13 +1,14 @@
 import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
-export default {
+const config = {
   kit: {
     adapter: adapter(),
     target: "#svelte",
-    appDir: "app",
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages/" : "",
+      base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
     },
   },
 };
+
+export default config;
