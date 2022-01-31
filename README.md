@@ -51,7 +51,7 @@ const config = {
 +   paths: {
 +     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
 +   },
-+ },
+  },
 };
 
 export default config;
@@ -62,8 +62,9 @@ export default config;
 
 The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 
+**package.json**
+
 ```json
-// package.json
 {
   "scripts": {
     "dev": "svelte-kit dev",
