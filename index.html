@@ -3,55 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-
-		
-
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/start-70ee48f0.js">
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/chunks/vendor-43cd886a.js">
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/__layout.svelte-ee4dc1ec.js">
-		<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/index.svelte-da24d8db.js">
-		<link rel="stylesheet" href="/sveltekit-gh-pages/app/assets/start-a8cd1609.css">
-
-		<script type="module">
-			import { start } from "/sveltekit-gh-pages/app/start-70ee48f0.js";
-			start({
-				target: document.querySelector("#svelte"),
-				paths: {"base":"/sveltekit-gh-pages/","assets":"/sveltekit-gh-pages"},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/sveltekit-gh-pages/app/pages/__layout.svelte-ee4dc1ec.js"),
-						import("/sveltekit-gh-pages/app/pages/index.svelte-da24d8db.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "/",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
-			});
-		</script>
+    <meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/sveltekit-gh-pages/app/start-4ba12587.js">
+	<link rel="modulepreload" href="/sveltekit-gh-pages/app/chunks/vendor-f0095a1c.js">
+	<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/__layout.svelte-be8b8fcc.js">
+	<link rel="modulepreload" href="/sveltekit-gh-pages/app/pages/index.svelte-ad3cd43b.js"><script type="module">
+		import { start } from "/sveltekit-gh-pages/app/start-4ba12587.js";
+		start({
+			target: document.querySelector("#svelte"),
+			paths: {"base":"/sveltekit-gh-pages","assets":"/sveltekit-gh-pages"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/sveltekit-gh-pages/app/pages/__layout.svelte-be8b8fcc.js"),
+						import("/sveltekit-gh-pages/app/pages/index.svelte-ad3cd43b.js")
+				],
+				url: new URL("http://sveltekit-prerender/sveltekit-gh-pages"),
+				params: {}
+			}
+		});
+	</script>
   </head>
   <body>
     <div id="svelte">
 
 
 <h1>sveltekit-gh-pages</h1>
+<p>Deployed to GitHub Pages</p>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
 <a href="about">About</a>
 
-
-
-	
 </div>
   </body>
 </html>
