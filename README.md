@@ -16,8 +16,7 @@ Use the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/p
   "devDependencies": {
 +   "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
-    "svelte": "^3.37.0",
-    "vite": "^2.2.1"
+    "svelte": "^3.46.4"
   }
 ```
 
