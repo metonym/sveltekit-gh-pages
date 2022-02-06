@@ -30,7 +30,6 @@ import adapter from "@sveltejs/adapter-static";
 export default {
   kit: {
 +   adapter: adapter(),
-    target: "#svelte",
   },
 };
 
@@ -47,7 +46,6 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
   kit: {
     adapter: adapter(),
-    target: "#svelte",
 +   paths: {
 +     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
 +   },
