@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit start",
     "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
   },
   "devDependencies": {

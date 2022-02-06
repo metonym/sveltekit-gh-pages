@@ -26,11 +26,13 @@ Use the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/p
 import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
-export default {
+const config = {
   kit: {
 +   adapter: adapter(),
   },
 };
+
+export default config;
 
 ```
 
@@ -66,7 +68,6 @@ The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit start",
     "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
   }
 }
