@@ -57,6 +57,16 @@ export default config;
 
 ```
 
+**Note:** You will also need to prepend relative paths with the [SvelteKit `base` path](https://kit.svelte.dev/docs/modules#$app-paths) so that your app can build successfully for production.
+
+```svelte
+<script>
+  import { base } from '$app/paths';
+</script>
+
+ <a href="{base}/about">About</a>
+```
+
 ### Add a `.nojekyll` file to the build
 
 The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
