@@ -2,11 +2,7 @@
 
 > Minimal [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
 
-This project was scaffolded using the [`npm init svelte@next`](https://kit.svelte.dev/docs#introduction-getting-started) command using the skeleton template.
-
-## Make deployable to GitHub Pages
-
-### 1) Use the static adapter
+## 1) Use the static adapter
 
 Use the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
 
@@ -29,6 +25,9 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
   kit: {
 +   adapter: adapter(),
++   prerender: {
++     default: true,
++   },
   },
 };
 
@@ -36,7 +35,7 @@ export default config;
 
 ```
 
-### 2) Modify `paths.base` in the config
+## 2) Modify `paths.base` in the config
 
 - `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
 
@@ -47,6 +46,9 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
   kit: {
     adapter: adapter(),
+    prerender: {
+      default: true,
+    },
 +   paths: {
 +     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
 +   },
@@ -67,7 +69,7 @@ export default config;
  <a href="{base}/about">About</a>
 ```
 
-### Add a `.nojekyll` file to the build
+## 3) Add a `.nojekyll` file to the build
 
 The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 

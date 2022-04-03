@@ -11,6 +11,6 @@
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "gh-pages": "^3.2.3",
-    "svelte": "^3.46.4"
+    "svelte": "^3.46.6"
   }
 }
