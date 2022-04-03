@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-72d534a0.js",
+    "file": "start-ac92e688.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-f0095a1c.js",
-      "_paths-4b3c6e7e.js"
+      "_index-dd45c2ae.js",
+      "_paths-396f020f.js"
     ],
     "dynamicImports": [
       ".svelte-kit/runtime/components/layout.svelte",
@@ -15,46 +15,46 @@
     ]
   },
   ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "layout.svelte-ddbe22e6.js",
+    "file": "layout.svelte-97940e45.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f0095a1c.js"
+      "_index-dd45c2ae.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-60b5f229.js",
+    "file": "error.svelte-97768127.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f0095a1c.js"
+      "_index-dd45c2ae.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-16a44db4.js",
+    "file": "pages/index.svelte-f66ef775.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f0095a1c.js",
-      "_paths-4b3c6e7e.js"
+      "_index-dd45c2ae.js",
+      "_paths-396f020f.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-9d485983.js",
+    "file": "pages/about.svelte-c28e4255.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f0095a1c.js"
+      "_index-dd45c2ae.js"
     ]
   },
-  "_vendor-f0095a1c.js": {
-    "file": "chunks/vendor-f0095a1c.js"
+  "_index-dd45c2ae.js": {
+    "file": "chunks/index-dd45c2ae.js"
   },
-  "_paths-4b3c6e7e.js": {
-    "file": "chunks/paths-4b3c6e7e.js"
+  "_paths-396f020f.js": {
+    "file": "chunks/paths-396f020f.js"
   }
 }
