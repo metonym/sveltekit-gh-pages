@@ -1,58 +1,58 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ac92e688.js",
+    "file": "start-25a7d2c5.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-dd45c2ae.js",
+      "_index-c3650d4a.js",
       "_paths-396f020f.js"
     ],
     "dynamicImports": [
       ".svelte-kit/runtime/components/layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte",
-      "src/routes/about.svelte"
+      "src/routes/about.svelte",
+      "src/routes/index.svelte"
     ]
   },
   ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "layout.svelte-97940e45.js",
+    "file": "layout.svelte-8187eef2.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-dd45c2ae.js"
+      "_index-c3650d4a.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-97768127.js",
+    "file": "error.svelte-61066a60.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-dd45c2ae.js"
-    ]
-  },
-  "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f66ef775.js",
-    "src": "src/routes/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-dd45c2ae.js",
-      "_paths-396f020f.js"
+      "_index-c3650d4a.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-c28e4255.js",
+    "file": "pages/about.svelte-26fae17c.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-dd45c2ae.js"
+      "_index-c3650d4a.js"
     ]
   },
-  "_index-dd45c2ae.js": {
-    "file": "chunks/index-dd45c2ae.js"
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-49e673a9.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c3650d4a.js",
+      "_paths-396f020f.js"
+    ]
+  },
+  "_index-c3650d4a.js": {
+    "file": "chunks/index-c3650d4a.js"
   },
   "_paths-396f020f.js": {
     "file": "chunks/paths-396f020f.js"
