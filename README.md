@@ -4,15 +4,17 @@
 
 ## 1) Use the static adapter
 
-Use the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
+Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
 
 **package.json**
 
 ```diff
   "devDependencies": {
 +   "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.46.4"
+    "@sveltejs/kit": "1.0.0-next.359",
+    "gh-pages": "^4.0.0",
+    "svelte": "^3.48.0",
+    "vite": "^2.9.13"
   }
 ```
 
@@ -63,10 +65,10 @@ export default config;
 
 ```svelte
 <script>
-  import { base } from '$app/paths';
+  import { base } from "$app/paths";
 </script>
 
- <a href="{base}/about">About</a>
+<a href="{base}/about">About</a>
 ```
 
 ## 3) Add a `.nojekyll` file to the build
@@ -78,8 +80,8 @@ The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll
 ```json
 {
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "dev": "vite dev",
+    "build": "vite build",
     "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
   }
 }
