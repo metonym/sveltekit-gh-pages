@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-f80ac709.js",
+    "file": "immutable/start-655d3ae6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-c3650d4a.js",
-      "_paths-396f020f.js"
+      "_index-714d015a.js",
+      "_paths-1c47712a.js"
     ],
     "dynamicImports": [
       ".svelte-kit/runtime/components/layout.svelte",
@@ -15,46 +15,46 @@
     ]
   },
   ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "layout.svelte-8187eef2.js",
+    "file": "immutable/layout.svelte-1d317cf3.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c3650d4a.js"
+      "_index-714d015a.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-61066a60.js",
+    "file": "immutable/error.svelte-c11ae625.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c3650d4a.js"
+      "_index-714d015a.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-26fae17c.js",
+    "file": "immutable/pages/about.svelte-a86f1a1d.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c3650d4a.js"
+      "_index-714d015a.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-49e673a9.js",
+    "file": "immutable/pages/index.svelte-afe7e52b.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c3650d4a.js",
-      "_paths-396f020f.js"
+      "_index-714d015a.js",
+      "_paths-1c47712a.js"
     ]
   },
-  "_index-c3650d4a.js": {
-    "file": "chunks/index-c3650d4a.js"
+  "_index-714d015a.js": {
+    "file": "immutable/chunks/index-714d015a.js"
   },
-  "_paths-396f020f.js": {
-    "file": "chunks/paths-396f020f.js"
+  "_paths-1c47712a.js": {
+    "file": "immutable/chunks/paths-1c47712a.js"
   }
 }
