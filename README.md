@@ -27,14 +27,18 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
   kit: {
 +   adapter: adapter(),
-+   prerender: {
-+     default: true,
-+   },
   },
 };
 
 export default config;
 
+```
+
+Ensure your top-level `+layout.js` exports `prerender = true`.
+
+```js
+// src/routes/+layout.js
+export const prerender = true;
 ```
 
 ## 2) Modify `paths.base` in the config
@@ -48,9 +52,6 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
   kit: {
     adapter: adapter(),
-    prerender: {
-      default: true,
-    },
 +   paths: {
 +     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
 +   },
