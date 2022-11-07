@@ -8,10 +8,10 @@
     "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "1.0.0-next.46",
-    "@sveltejs/kit": "1.0.0-next.522",
+    "@sveltejs/adapter-static": "1.0.0-next.48",
+    "@sveltejs/kit": "1.0.0-next.535",
     "gh-pages": "^4.0.0",
     "svelte": "^3.52.0",
-    "vite": "^3.1.8"
+    "vite": "^3.2.2"
   }
 }
