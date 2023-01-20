@@ -10,9 +10,9 @@ Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/mast
 
 ```diff
   "devDependencies": {
-+   "@sveltejs/adapter-static": "1.0.4",
-    "@sveltejs/kit": "1.1.1",
-    "gh-pages": "^4.0.0",
++   "@sveltejs/adapter-static": "1.0.5",
+    "@sveltejs/kit": "1.2.1",
+    "gh-pages": "^5.0.0",
     "svelte": "^3.55.1",
     "vite": "^4.0.4"
   }
