@@ -127,15 +127,15 @@
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-2.0.2.tgz#49afd27787fb73d789017d002a91031088494139"
   integrity sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==
 
-"@sveltejs/kit@^1.15.10":
-  version "1.15.10"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.15.10.tgz#d92b058d32652907a2a85d0c970a405910db7257"
-  integrity sha512-qRZxODfsixjgY+7OOxhAQB8viVaxjyDUz2lM6cE22kObzF5mNke81FIxB2wdaOX42LyfVwIYULZQSr7duxLZ7w==
+"@sveltejs/kit@^1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.18.0.tgz#7ac2c7689272886dcf7d7c015d084e755d64c238"
+  integrity sha512-QE5X9gCG34khrO6j01ZbRXtVx+yyUNe8PmVPeG0M+I8eyFejqYMEhD1JtjCrLzpd4KukvuO8bL35M1VWmPM7hQ==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^2.1.1"
     "@types/cookie" "^0.5.1"
     cookie "^0.5.0"
-    devalue "^4.3.0"
+    devalue "^4.3.1"
     esm-env "^1.0.0"
     kleur "^4.1.5"
     magic-string "^0.30.0"
@@ -232,10 +232,10 @@ deepmerge@^4.3.1:
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.1.tgz#44b5f2147cd3b00d4b56137685966f26fd25dd4a"
   integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
 
-devalue@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/devalue/-/devalue-4.3.0.tgz#d86db8fee63a70317c2355be0d3d1b4d8f89a44e"
-  integrity sha512-n94yQo4LI3w7erwf84mhRUkUJfhLoCZiLyoOZ/QFsDbcWNZePrLwbQpvZBUG2TNxwV3VjCKPxkiiQA6pe3TrTA==
+devalue@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/devalue/-/devalue-4.3.1.tgz#08f9a0b5375ad754167aa71872a9c911a46a5428"
+  integrity sha512-Kc0TSP9IUU9eg55au5Q3YtqaYI2cgntVpunJV9Exbm9nvlBeTE5p2NqYHfpuXK6+VF2hF5PI+BPFPUti7e2N1g==
 
 email-addresses@^5.0.0:
   version "5.0.0"
@@ -593,10 +593,10 @@ svelte-hmr@^0.15.1:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.1.tgz#d11d878a0bbb12ec1cba030f580cd2049f4ec86b"
   integrity sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==
 
-svelte@^3.58.0:
-  version "3.58.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.58.0.tgz#d3e6f103efd6129e51c7d709225ad3b4c052b64e"
-  integrity sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==
+svelte@^3.59.1:
+  version "3.59.1"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.59.1.tgz#3de3d56b9165748f32f3131589b8d183cabe7449"
+  integrity sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==
 
 tiny-glob@^0.2.9:
   version "0.2.9"
@@ -630,10 +630,10 @@ universalify@^0.1.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-vite@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.4.tgz#1c518d763d5a700d890c3a19ab59220f06e7a7d5"
-  integrity sha512-f90aqGBoxSFxWph2b39ae2uHAxm5jFBBdnfueNxZAT1FTpM13ccFQExCaKbR2xFW5atowjleRniQ7onjJ22QEg==
+vite@^4.3.8:
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.8.tgz#70cd6a294ab52d7fb8f37f5bc63d117dd19e9918"
+  integrity sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==
   dependencies:
     esbuild "^0.17.5"
     postcss "^8.4.23"
