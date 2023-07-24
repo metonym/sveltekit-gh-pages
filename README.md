@@ -1,6 +1,6 @@
 # sveltekit-gh-pages
 
-> Minimal [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
+> Minimal static, pre-rendered [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
 
 ## 1) Use the static adapter
 
@@ -11,10 +11,10 @@ Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/mast
 ```diff
   "devDependencies": {
 +   "@sveltejs/adapter-static": "^2.0.2",
-    "@sveltejs/kit": "^1.15.10",
+    "@sveltejs/kit": "^1.22.3",
     "gh-pages": "^5.0.0",
-    "svelte": "^3.58.0",
-    "vite": "^4.3.4"
+    "svelte": "^4.1.1",
+    "vite": "^4.4.7"
   }
 ```
 
@@ -43,7 +43,7 @@ export const prerender = true;
 
 ## 2) Modify `paths.base` in the config
 
-- `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
+`kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages)). In the example below, replace `/sveltekit-gh-pages` with your repository name.
 
 ```diff
 import adapter from "@sveltejs/adapter-static";
@@ -72,9 +72,9 @@ export default config;
 <a href="{base}/about">About</a>
 ```
 
-## 3) Add a `.nojekyll` file to the build
+## 3) Add a `.nojekyll` file to the `/static` folder
 
-The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
+The last step is to add an empty `.nojekyll` file to the static folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/). SvelteKit will copy `static` assets to the final build folder.
 
 **package.json**
 
@@ -83,10 +83,17 @@ The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
+    "deploy": "gh-pages -d build -t true"
   }
 }
 ```
+
+**The `deploy` script**
+
+The deploy script instructs `gh-pages` to do the following:
+
+- `-d build`: Publish the `build` folder
+- `-t true`: Include dotfiles (e.g., `.nojekyll`)
 
 ---
 
