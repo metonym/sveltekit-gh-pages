@@ -1,3 +1,3 @@
 <h1>About</h1>
-<p>Reload this page. You should expect to see the same content.</p>
-<p>Inspect the page source and note that this markup is pre-rendered.</p>
+<p>Reload this page. You should see the same content.</p>
+<p>Inspect the page source; the HTML should be pre-rendered.</p>

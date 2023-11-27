@@ -1,6 +1,6 @@
 # sveltekit-gh-pages
 
-> Minimal static, pre-rendered [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
+> Minimal static [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
 
 ## 1) Use the static adapter
 
@@ -99,7 +99,7 @@ The deploy script instructs `gh-pages` to do the following:
 
 ## Quick start
 
-Use [degit](https://github.com/Rich-Harris/degit) to quickly scaffold a new project:
+Use [degit](https://github.com/Rich-Harris/degit) to quickly scaffold a new project from this repository:
 
 ```sh
 npx degit metonym/sveltekit-gh-pages my-app

@@ -3,8 +3,5 @@
 </script>
 
 <h1>sveltekit-gh-pages</h1>
-<p>Deployed to GitHub Pages</p>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<p>Deployed to GitHub Pages.</p>
 <a href="{base}/about">About</a>
