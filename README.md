@@ -35,11 +35,13 @@ export default config;
 
 ```
 
-Ensure your top-level `+layout.js` exports `prerender = true`.
+Ensure your top-level `+layout.js` exports `prerender = true`. Note that for SvelteKit version 2, [trailingSlash](https://kit.svelte.dev/docs/page-options#trailingslash) should be set to "always" so that the app does not redirect the URL to `/about`.
 
 ```js
 // src/routes/+layout.js
 export const prerender = true;
+
+export const trailingSlash = "always";
 ```
 
 ## 2) Modify `paths.base` in the config
