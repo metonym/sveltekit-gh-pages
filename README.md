@@ -10,12 +10,12 @@ Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/mast
 
 ```diff
   "devDependencies": {
-+   "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^2.0.6",
-    "@sveltejs/vite-plugin-svelte": "^3.0.1",
++   "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/kit": "^2.5.4",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "gh-pages": "^6.1.1",
-    "svelte": "^4.2.8",
-    "vite": "^5.0.10"
+    "svelte": "^4.2.12",
+    "vite": "^5.1.6"
   }
 ```
 
@@ -106,11 +106,11 @@ Use [degit](https://github.com/Rich-Harris/degit) to quickly scaffold a new proj
 
 ```sh
 npx degit metonym/sveltekit-gh-pages my-app
-cd my-app && yarn install
+cd my-app && npm install
 ```
 
 ## Deploying to GitHub Pages
 
-First, build the app by running `yarn build`.
+First, build the app by running `npm run build`.
 
-Then, run `yarn deploy` to deploy the app to GitHub Pages.
+Then, run `npm run deploy` to deploy the app to GitHub Pages.
