@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "preview": "vite preview",
     "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
