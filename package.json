@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build -t true"
+    "deploy": "gh-pages -d build -t"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",

@@ -81,7 +81,7 @@ The last step is to add an empty `.nojekyll` file to the static folder to [bypas
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "deploy": "gh-pages -d build -t true"
+    "deploy": "gh-pages -d build -t"
   }
 }
 ```
@@ -91,7 +91,7 @@ The last step is to add an empty `.nojekyll` file to the static folder to [bypas
 The deploy script instructs `gh-pages` to do the following:
 
 - `-d build`: Publish the `build` folder
-- `-t true`: Include dotfiles (e.g., `.nojekyll`)
+- `-t`: Include dotfiles (e.g., `.nojekyll`)
 
 ---
 
