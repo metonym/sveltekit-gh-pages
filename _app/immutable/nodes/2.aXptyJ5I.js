@@ -1,0 +1,1 @@
+import{C as e,d as t,o as n,p as r,w as i,y as a}from"../chunks/DZb9BurY.js";import{s as o}from"../chunks/D04JQcO0.js";import"../chunks/xihTtKlq.js";import"../chunks/Cb4mEZoj.js";var s=r(`<h1>sveltekit-gh-pages</h1> <p>Deployed to GitHub Pages.</p> <a>About</a>`,1);function c(r){var c=s(),l=i(e(c),4);a(()=>n(l,`href`,`${o??``}/about`)),t(r,c)}export{c as component};
